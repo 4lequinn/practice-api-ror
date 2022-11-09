@@ -1,0 +1,37 @@
+Comandos rails
+
+// Nos muestra ayuda con los comandos
+rails --help
+
+rails g model model_name atribute1 : datatype atribute2 : datatype
+
+// Eliminar la base de datos si ya existe
+// Crear la base de datos
+// Realizar la migracion de los modelos a la base de datos
+rails db:drop db:create db:migrate
+
+// Ejecuta la semilla 
+rails db:seed 
+
+// Crear una migracion
+rails g migration addNullFalseToProductFields
+
+
+// consola interactiva de ruby para ejecutar comandos del orm
+irb
+rails console
+
+// Instala dependencias
+bundle install
+
+
+//  
+rails scaffold model_name name: string email: string description: text
+
+rails db:migrate RAILS_ENV=development
+
+// ver el estado de las migraciones
+rails db:migrate:status
+
+// Permite ver las rutas de la API
+rails routes
